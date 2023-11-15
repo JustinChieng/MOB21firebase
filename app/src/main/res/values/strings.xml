@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">mob21justin</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="delete">delete</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="email">Email</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="empty" />
+    <string name="todo" />
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="edit_profile_pic">Edit Profile Pic</string>
+    <string name="signin_with_google">SignIn with google</string>
+    <string name="default_web_client_id">1063762169241-gjo72q9uolbn5va2sfiq64uor5nicv9c.apps.googleusercontent.com</string>
+
+</resources>

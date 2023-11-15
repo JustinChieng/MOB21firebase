@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+
+    <action
+        android:id="@+id/toLogin"
+        app:destination="@+id/loginFragment"
+        app:popUpTo="@id/tabContainerFragment"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/toHome"
+        app:destination="@+id/tabContainerFragment"
+        app:popUpTo="@id/loginFragment"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/tabContainerFragment"
+        android:name="com.justin.mob21justin.ui.tabContainer.TabContainerFragment"
+        android:label="fragment_container"
+        tools:layout="@layout/fragment_tab_container">
+        <action
+            android:id="@+id/action_home_to_addTodo"
+            app:destination="@id/addTodoFragment" />
+        <action
+            android:id="@+id/action_home_to_editTodo"
+            app:destination="@id/editTodoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTodoFragment"
+        android:name="com.justin.mob21justin.ui.addEditTodo.AddTodoFragment"
+        android:label="AddTodoFragment"
+        tools:layout="@layout/fragment_base_add_edit_todo" />
+    <fragment
+        android:id="@+id/editTodoFragment"
+        android:name="com.justin.mob21justin.ui.addEditTodo.EditTodoFragment"
+        android:label="EditTodoFragment"
+        tools:layout="@layout/fragment_base_add_edit_todo">
+
+        <argument
+            android:name="todoId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.justin.mob21justin.ui.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.justin.mob21justin.ui.register.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register" />
+</navigation>
